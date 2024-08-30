@@ -11,28 +11,25 @@
     </title>
 </head>
 <body>
-    This is my first Page
+    
+    <div id = "Header"></div>
 
+    <h1> This is the base heading </h1>
+    
+     <hr></hr>
 
-    <h1>First Heading</h1>
-    <h2>2nd Heading</h2>
-    <h3>3rd Heading</h3>
-    <h4>4rd Heading</h4>
-    <h5>5th Heading</h5>
-    <h6>6th Heading</h6>
-
-    <hr></hr>
- 
    <div> 
     <h3>A Big Long Paragraph That None of Us Edit </h3>
     <p>
-      A week ago a friend invited a couple of other couples over for dinner. Eventually, the food (but not the wine) was cleared off the table for what turned out to be some fierce Scrabbling. Heeding the strategy of going for the shorter, more valuable word over the longer cheaper word, our final play was “Bon,” which–as luck would have it!–happens to be a Japanese Buddhist festival, and not, as I had originally asserted while laying the tiles on the board, one half of a chocolate-covered cherry treat. Anyway, the strategy worked. My team only lost by 53 points instead of 58.</span>
+     <b> A week ago a friend invited a couple of other couples over for dinner. </b>Eventually, the food (but not the wine) was cleared off the table for what turned out to be some fierce Scrabbling. Heeding the strategy of going for the shorter, more valuable word over the longer cheaper word, our final play was “Bon,” which–as luck would have it!–happens to be a Japanese Buddhist festival, and not, as I had originally asserted while laying the tiles on the board, one half of a chocolate-covered cherry treat. Anyway, the strategy worked. My team only lost by 53 points instead of 58.</span>
     </p>
     <p>
         Just the day before, our host had written of the challenges of writing short. In journalism–my friend’s chosen trade, and mostly my own, too–Mark Twain’s observation undoubtedly applies: “I didn’t have time to write a short letter, so I wrote a long one instead.” The principle holds across genres, in letters, reporting, and other writing. It’s harder to be concise than to blather. (Full disclosure, this blog post will clock in at a blather-esque 803 words.) Good writing is boiled down, not baked full of air like a souffl??. No matter how yummy souffl??s may be. Which they are. Yummy like a Grisham novel.
     </p>
     </div>
     <hr></hr>
+
+        
 
     <img src="https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image can not be loaded" width="400px" height="400px">
     <img src="images.jpeg" alt="Image not found" width="400px" height="400px">
@@ -44,19 +41,126 @@
        This is my code 
        It should use the content 
        </pre>
-     <div>
-        <div>
-            This is my counting page
+      </div>
+       
+      <div>
+          This is my counting page
           1 2 3 4 
+      </div>
 
-        </div>
-
-   
-           <h4>This is my h4 heading</h4>
-           <span>  
-           inline
-           </span>
+      <script>
+        fetch("Header.html")
+        .then(response => response.text())
+        .then(data => document.getElementById('Header').innerHTML = data)
+        </script>
   
 </body>
+
+   <!--List-->
+
+
+   <hr></hr>
+
+   <div> 
+    <h3>Unordered List </h3>
+
+    <ul>
+      <li>Apple </li>
+      <li>Oranges </li>
+      <li>Guawava </li>
+     
+    </ul>
+
+    <hr></hr>
+
+    <div> 
+     <h3>Ordered List </h3>
+
+    <!--Find out how can you make it return A, B, C iniitials in this list or * in this list-->
+ 
+     <ol >
+         
+       <li>Apple </li>
+       <li>Oranges </li>
+       <li>Guawava </li>
+    
+     </ol>
+
+     <hr></hr>
+
+     <table border="1" style="border-collapse: collapse;">
+       
+      <tr>
+        <th> Name </th> 
+        <th> Runs </th>
+        <th> Balls </th>
+      </tr>
+
+        <tbody>
+        <tr>
+        <td> Virat Kohali </td>
+        <td> 120 </td>
+        <td> 100 </td>
+        </tr>
+
+        <tr>
+        <td> Shubhman Gill </td>
+        <td> 110 </td>
+        <td> 80 </td>
+        </tr>
+        <tbody>
+
+    </table>
+
+  <hr></hr>  
+
+  <div>  
+    <form action="https://www.google.co.in/">
+      <label> Name </label>
+       <input  type="text"  />  <br/>   
+       <label> Email </label>
+       <input  type="email" />   <br/>  
+       <label> Password </label>
+       <input  type="password" />    <br/> 
+
+      <label for="v"> Veg </label> 
+      <input id="v" type="checkbox" />
+      <label for="n-v"> Non-Veg </label> 
+      <input id="n-v" type="checkbox" />  <br/> 
+      <label> Gender </label>
+      <label for="m"> Male </label>
+      <input id="m" name = "Gender" type="radio" />
+      <label for="f"> Female </label>
+      <input id="f" name = "Gender" type="radio" />  <br/> 
+
+      <label> Countries </label>
+      <select>
+        <option>India  </option>
+        <option>USA  </option>
+        <option>China  </option>
+        <option>Germany  </option>
+       </select> 
+       <br/>
+      <input type= "submit"  width="200px"/> 
+
+
+      </form>
+  </div>   
+  
+  <a href="https://www.youtube.com/watch?v=WgGloq4v5pM" target="_blank">Watch this video</a>
+
+  <hr></hr>
+  <video width="640" height="360" controls>
+    <source src="https://static.videezy.com/system/resources/previews/000/000/168/original/Record.mp4" type="video/mp4">
+    Your browser doesn't support the video tag.
+  </video>
+
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/WgGloq4v5pM" frameborder="0" allowfullscreen></iframe>
+
+  <hr></hr>
+  <a href="https://biteable.com/wp-content/uploads/2022/11/confused-giphy.gif"> Watch this gify</a>
+
+
+
 
 </html>
